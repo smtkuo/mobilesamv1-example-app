@@ -1,5 +1,7 @@
-data = {
+CONNECT.data = {
     name: 'r_homeRoute',
-    pageData:'p_homepage',
+    page:'p_homePage',
     layout:'c_layout'
 }
+
+Memory[CONNECT.data.name] = CONNECT.data

@@ -1,10 +1,12 @@
-data = {
-    name: 'p_homepage',
+CONNECT.data = {
+    name: 'p_homePage',
     view: ` 
     <div class="bg-white h-full w-full px-5 pt-6 pb-20 overflow-y-auto">
             <div class="mb-3">   
                 <h1 class="text-3xl font-bold" onclick="CONNECT.function.Alert({homepage:1})">HomePage</h1>
                 <p class="text-sm text-gray-500 uppercase font-bold">THURSDAY 6 AUGUST</p>
+                <p>${CONNECT.function.TEST()}</p>
+                <p>${CONNECT.function.TESTB()}</p>
             </div>
             <div class="mb-5">
                 <a href="#" class="block rounded-lg relative p-5 transform transition-all duration-300 scale-100 hover:scale-95" style="background: url(https://images.unsplash.com/photo-1484876065684-b683cf17d276?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80) center; background-size: cover;">
@@ -48,3 +50,5 @@ data = {
         callback()
     } + ')(); '
 }
+
+Memory[CONNECT.data.name] = CONNECT.data

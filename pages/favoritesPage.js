@@ -1,4 +1,4 @@
-data = {
+CONNECT.data = {
     name: 'p_favoritesPage',
     view: ` 
     <div class="bg-white h-full w-full px-5 pt-6 pb-20 overflow-y-auto">
@@ -36,3 +36,5 @@ data = {
         callback()
     } + ')(); '
 }
+
+Memory[CONNECT.data.name] = CONNECT.data

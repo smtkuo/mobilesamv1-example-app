@@ -1,5 +1,7 @@
-data = {
+CONNECT.data = {
     name: 'r_searchRoute',
-    pageData:'p_searchPage',
+    page:'p_searchPage',
     layout:'c_layout'
 }
+
+Memory[CONNECT.data.name] = CONNECT.data
