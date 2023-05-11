@@ -6,8 +6,7 @@
 CONNECT.data = {
     name: 'c_layout',
     view: `
-    <div class="min-w-screen min-h-screen bg-gray-200 flex items-center justify-center px-5 py-5">
-    <div class="bg-white text-gray-800 rounded-xl shadow-lg overflow-hidden relative flex" style="width:414px;height:736px">
+    <div class="bg-white text-gray-800 rounded-xl shadow-lg overflow-hidden relative flex" style="width:100%;height:100%;">
         {{pageData}}
         <div class="bg-white absolute bottom-0 w-full border-t border-gray-200 flex">
             <a href="javascript:CONNECT.route('r_homeRoute')" id="r_homeRoute" class="flex flex-grow items-center justify-center p-2 text-gray-500 hover:text-indigo-500 ">
@@ -44,7 +43,6 @@ CONNECT.data = {
             </a>
         </div>
     </div>
-</div>  
     `,
     script: '(' + function async(callback=function(){}) {
         console.log('RUN layout script')
